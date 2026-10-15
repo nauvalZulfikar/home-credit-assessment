@@ -1,0 +1,8 @@
+model,auc,gini,ks,caught_pct,approved_bad_rate,good_rejected_pct
+B0 approve everyone,0.5,0.0,0.0,0.0,0.0807,0.0
+B1 EXT_SOURCE_2 only,0.6559,0.3118,0.2233,0.2271,0.0693,0.0888
+B2 average of EXT_SOURCE_1-3,0.7165,0.4329,0.3239,0.2841,0.0642,0.0838
+B3 annuity-to-income rule,0.5195,0.0391,0.0365,0.1015,0.0806,0.0999
+Scorecard (WoE logistic),0.7575,0.5149,0.3845,0.3309,0.06,0.0797
+LightGBM,0.7908,0.5816,0.4406,0.3795,0.0557,0.0755
+LightGBM without external scores,0.7665,0.5329,0.3965,0.343,0.0589,0.0787

@@ -1,0 +1,104 @@
+{
+  "behaviour_tests": [
+    {
+      "test": "LightGBM: gender flipped (not a model input)",
+      "expect": "same",
+      "mean_change": 0.0,
+      "share_moved_right_way": 1.0,
+      "max_abs_change": 0.0,
+      "passed": true
+    },
+    {
+      "test": "Scorecard: gender flipped (not a model input)",
+      "expect": "same",
+      "mean_change": 0.0,
+      "share_moved_right_way": 1.0,
+      "max_abs_change": 0.0,
+      "passed": true
+    },
+    {
+      "test": "LightGBM: client ID changed",
+      "expect": "same",
+      "mean_change": 0.0,
+      "share_moved_right_way": 1.0,
+      "max_abs_change": 0.0,
+      "passed": true
+    },
+    {
+      "test": "Scorecard: client ID changed",
+      "expect": "same",
+      "mean_change": 0.0,
+      "share_moved_right_way": 1.0,
+      "max_abs_change": 0.0,
+      "passed": true
+    },
+    {
+      "test": "LightGBM: external scores +0.1",
+      "expect": "down",
+      "mean_change": -0.022053124510754713,
+      "share_moved_right_way": 0.9956666666666667,
+      "max_abs_change": 0.1850718004483723,
+      "passed": true
+    },
+    {
+      "test": "Scorecard: external scores +0.1",
+      "expect": "down",
+      "mean_change": -0.025134453576442648,
+      "share_moved_right_way": 1.0,
+      "max_abs_change": 0.19973754987596082,
+      "passed": true
+    },
+    {
+      "test": "LightGBM: late-payment share +0.2",
+      "expect": "up",
+      "mean_change": 0.014991024935185828,
+      "share_moved_right_way": 0.9913333333333333,
+      "max_abs_change": 0.13376595737942598,
+      "passed": true
+    },
+    {
+      "test": "Scorecard: late-payment share +0.2",
+      "expect": "up",
+      "mean_change": 0.019396840320278018,
+      "share_moved_right_way": 1.0,
+      "max_abs_change": 0.11500707661003146,
+      "passed": true
+    },
+    {
+      "test": "LightGBM: days past due +30",
+      "expect": "up",
+      "mean_change": 0.009130244734106691,
+      "share_moved_right_way": 0.9776666666666667,
+      "max_abs_change": 0.07528137239308955,
+      "passed": true
+    },
+    {
+      "test": "Scorecard: days past due +30",
+      "expect": "up",
+      "mean_change": 0.00475709557827938,
+      "share_moved_right_way": 1.0,
+      "max_abs_change": 0.027832902923958625,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "ab_test": {
+    "bad_rate_now": 0.08072986956394489,
+    "bad_rate_expected": 0.05565552327682146,
+    "alpha": 0.05,
+    "power": 0.8,
+    "clients_per_group": 1586,
+    "clients_per_group_half_effect": 6882,
+    "note": "Bad rate is only known after the loans mature (months), so the test length = time to enrol this many clients + the observation window."
+  },
+  "versions": {
+    "python": "3.12.13",
+    "lightgbm": "4.7.0",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "sklearn": "1.9.1",
+    "optbinning": "1.0.0",
+    "seed": 42,
+    "folds": 5
+  }
+}

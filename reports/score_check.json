@@ -1,0 +1,7 @@
+{
+  "n_test": 48744,
+  "lgbm_max_abs_diff": 2.220446049250313e-16,
+  "scorecard_max_abs_diff": 0.0,
+  "points_max_abs_diff": 0.0,
+  "match": true
+}

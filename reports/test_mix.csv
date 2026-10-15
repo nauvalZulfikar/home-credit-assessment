@@ -1,0 +1,3 @@
+contract_type,train_share,test_share
+Cash loans,0.9048,0.991
+Revolving loans,0.0952,0.009

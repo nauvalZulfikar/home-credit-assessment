@@ -1,0 +1,12 @@
+.venv/
+data
+*.zip
+.runner*.log
+__pycache__/
+*.bak
+reports/submission_*.csv
+.DS_Store
+src/common.md
+_private/
+reports.bak-*/
+.macs/

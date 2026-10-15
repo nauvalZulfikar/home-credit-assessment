@@ -1,0 +1,21 @@
+model,decile,mean_pred,actual_rate,n
+LightGBM,1,0.0098,0.0079,30751
+LightGBM,2,0.0168,0.0155,30751
+LightGBM,3,0.0232,0.0203,30750
+LightGBM,4,0.0306,0.0297,30751
+LightGBM,5,0.04,0.0403,30751
+LightGBM,6,0.0524,0.0539,30750
+LightGBM,7,0.0702,0.0714,30751
+LightGBM,8,0.0978,0.1074,30750
+LightGBM,9,0.1487,0.1545,30751
+LightGBM,10,0.3082,0.3064,30751
+Scorecard (WoE logistic),1,0.0119,0.0126,30751
+Scorecard (WoE logistic),2,0.0207,0.021,30751
+Scorecard (WoE logistic),3,0.0285,0.0273,30750
+Scorecard (WoE logistic),4,0.0372,0.0353,30751
+Scorecard (WoE logistic),5,0.0476,0.0461,30751
+Scorecard (WoE logistic),6,0.0605,0.0628,30750
+Scorecard (WoE logistic),7,0.0778,0.0757,30751
+Scorecard (WoE logistic),8,0.1031,0.1075,30750
+Scorecard (WoE logistic),9,0.1463,0.1518,30751
+Scorecard (WoE logistic),10,0.2734,0.2671,30751

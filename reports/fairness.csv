@@ -1,0 +1,13 @@
+model,segment,group,n,default_rate,rejection_rate,good_rejected_pct,defaults_caught_pct
+LightGBM,Gender,F,202448,0.07,0.0839,0.0638,0.351
+LightGBM,Gender,M,105059,0.1014,0.131,0.0987,0.4176
+LightGBM,Age band,30-45,123736,0.09,0.1176,0.0888,0.4091
+LightGBM,Age band,45-60,103286,0.0656,0.0675,0.0505,0.3104
+LightGBM,Age band,60+,35301,0.0492,0.0279,0.0212,0.1573
+LightGBM,Age band,<30,45184,0.1144,0.1823,0.1436,0.4811
+Scorecard (WoE logistic),Gender,F,202448,0.07,0.0842,0.0674,0.3071
+Scorecard (WoE logistic),Gender,M,105059,0.1014,0.1305,0.1044,0.3625
+Scorecard (WoE logistic),Age band,30-45,123736,0.09,0.11,0.0865,0.3467
+Scorecard (WoE logistic),Age band,45-60,103286,0.0656,0.0622,0.0491,0.2496
+Scorecard (WoE logistic),Age band,60+,35301,0.0492,0.0253,0.0208,0.1129
+Scorecard (WoE logistic),Age band,<30,45184,0.1144,0.2174,0.1839,0.4765

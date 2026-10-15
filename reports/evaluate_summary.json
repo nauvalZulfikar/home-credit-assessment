@@ -1,0 +1,59 @@
+{
+  "default_rate": 0.08072986956394489,
+  "n_train": 307507,
+  "auc": {
+    "B0 approve everyone": 0.5,
+    "B1 EXT_SOURCE_2 only": 0.6559,
+    "B2 average of EXT_SOURCE_1-3": 0.7165,
+    "B3 annuity-to-income rule": 0.5195,
+    "Scorecard (WoE logistic)": 0.7575,
+    "LightGBM": 0.7908,
+    "LightGBM without external scores": 0.7665
+  },
+  "auc_ci95": {
+    "LightGBM": [
+      0.7879565363584028,
+      0.7934574201855871
+    ],
+    "Scorecard (WoE logistic)": [
+      0.754243880421525,
+      0.7607588728140742
+    ],
+    "diff": [
+      0.03180888508896047,
+      0.03487982355258244
+    ]
+  },
+  "best_baseline": "B2 average of EXT_SOURCE_1-3",
+  "best_baseline_auc": 0.7165,
+  "models_beat_baseline": true,
+  "at_10": {
+    "Scorecard (WoE logistic)": {
+      "caught_pct": 0.3308761329305136,
+      "approved_bad_rate": 0.06002037896197372,
+      "good_rejected_pct": 0.07972562809092903
+    },
+    "LightGBM": {
+      "caught_pct": 0.37953675730110775,
+      "approved_bad_rate": 0.05565552327682146,
+      "good_rejected_pct": 0.0754522749945168
+    },
+    "LightGBM without external scores": {
+      "caught_pct": 0.3430412890231621,
+      "approved_bad_rate": 0.058929165040685655,
+      "good_rejected_pct": 0.07865728981682597
+    }
+  },
+  "train_cash_share": 0.9048,
+  "test_cash_share": 0.991,
+  "lgbm_auc_cash": 0.7903,
+  "lgbm_auc_revolving": 0.7816,
+  "flagged_segments": [
+    "Age band: 60+"
+  ],
+  "small_segments": [
+    "Income type: Other"
+  ],
+  "fairness_max_gap_lgbm": 0.0471,
+  "default_rate_gap_gender": 0.0314
+}

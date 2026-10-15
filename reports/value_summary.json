@@ -1,0 +1,31 @@
+{
+  "lgbm_at_10": {
+    "model": "LightGBM",
+    "reject_pct": 0.1,
+    "n_rejected": 30751,
+    "defaults_avoided": 9422,
+    "good_clients_rejected": 21329,
+    "credit_defaults_avoided": 4823155712.0,
+    "credit_good_rejected": 11037536256.0,
+    "break_even_ratio": 2.288
+  },
+  "scorecard_at_10": {
+    "model": "Scorecard (WoE logistic)",
+    "reject_pct": 0.1,
+    "n_rejected": 30751,
+    "defaults_avoided": 8214,
+    "good_clients_rejected": 22537,
+    "credit_defaults_avoided": 3993078784.0,
+    "credit_good_rejected": 10873775104.0,
+    "break_even_ratio": 2.723
+  },
+  "break_even_ratio_range_lgbm": [
+    1.664,
+    6.497
+  ],
+  "feature_psi_max": 1.6261,
+  "feature_psi_max_name": "APP_CREDIT_TO_ANNUITY",
+  "n_features_watch_or_act": 1,
+  "score_psi_lgbm": 0.004056370023675511,
+  "score_psi_scorecard": 0.0011971721632581022
+}
